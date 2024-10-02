@@ -1,11 +1,11 @@
 import React, { FC, PropsWithChildren } from 'react';
 import { ESignalType } from '@/models/signal-type.enum';
 import { EState } from '@/models/state.enum';
-import { HatButtonContainer, HatDataSourceContainer, HatTextContainer } from './control-room-base-hat.styled';
-import ArrowIcon from '../shared/icons/arrow-icon';
-import Typography from '../shared/typography/typography';
-import ControlRoomSignalHatCircles from './control-room-signal-hat-circles/control-room-signal-hat-circles';
+import { HatButtonContainer, HatDataSourceContainer, HatTextContainer } from './pit-base-hat.styled';
 import { StyledPitHatContainer, StyledPitHatContent } from './pit-hat.styled';
+import PitHatCircles from './pit-hat-circles/pit-hat-circles';
+import Typography from '@/components/shared/typography/typography';
+import ArrowIcon from '@/components/shared/icons/arrow-icon';
 
 export interface IPitHatProps extends PropsWithChildren {
   name: string; // pitName
@@ -73,7 +73,7 @@ const PitHat: FC<IPitHatProps> = (props) => {
           {!isAdminMode && signalType && (
             <HatDataSourceContainer>
               <span style={{ right: children ? '0' : '-2.938rem' }}>
-                <ControlRoomSignalHatCircles signalType={signalType} />
+                <PitHatCircles signalType={signalType} />
               </span>
               {children}
             </HatDataSourceContainer>

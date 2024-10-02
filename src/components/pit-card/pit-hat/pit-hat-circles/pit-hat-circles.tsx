@@ -1,23 +1,23 @@
 import { FC } from 'react';
-import { ControlRoomSignalHatCircle } from './control-room-signal-hat-circles.styled';
 import { ESignalType } from '@/models/signal-type.enum';
+import { StyledPitHatCircle } from './pit-hat-circles.styled';
 
-interface IControlRoomSignalHatCirclesProps {
+interface IPitHatCirclesProps {
   signalType: ESignalType | null;
 }
 
-const ControlRoomSignalHatCircles: FC<IControlRoomSignalHatCirclesProps> = ({ signalType }) => {
+const PitHatCircles: FC<IPitHatCirclesProps> = ({ signalType }) => {
   return (
     <>
-      <ControlRoomSignalHatCircle
+      <StyledPitHatCircle
         signalType={signalType}
         style={{ width: '5rem' }}
       />
-      <ControlRoomSignalHatCircle
+      <StyledPitHatCircle
         signalType={signalType}
         style={{ width: '9.6rem' }}
       />
-      <ControlRoomSignalHatCircle
+      <StyledPitHatCircle
         signalType={signalType}
         style={{ width: '14.1rem' }}
       />
@@ -25,4 +25,4 @@ const ControlRoomSignalHatCircles: FC<IControlRoomSignalHatCirclesProps> = ({ si
   );
 };
 
-export default ControlRoomSignalHatCircles;
+export default PitHatCircles;

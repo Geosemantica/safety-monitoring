@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { EState } from '@/models/state.enum';
-import { HatContainer, HatContent } from './control-room-base-hat.styled';
+import { HatContainer, HatContent } from './pit-base-hat.styled';
 
 interface IPitHatContainer {
   isAlerts?: boolean;

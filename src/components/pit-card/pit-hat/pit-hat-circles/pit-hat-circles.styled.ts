@@ -1,14 +1,14 @@
 import { ESignalType } from '@/models/signal-type.enum';
 import styled from 'styled-components';
 
-export const ControlRoomSignalHatCirclesWrapper = styled.div`
+export const StyledPitHatCirclesWrapper = styled.div`
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
-export const ControlRoomSignalHatCircle = styled.div`
+export const StyledPitHatCircle = styled.div`
   position: absolute;
   z-index: var(--z-signal-low);
   transform: translateX(5px);

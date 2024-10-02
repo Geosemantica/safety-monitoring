@@ -1,5 +1,5 @@
+import { ETrendDirection } from '@/models/trend-direction.enum';
 import React, { FC } from 'react';
-import { ETrendDirection } from '@/services/enumsNEW/trend-direction.enum';
 
 interface ITrendProps {
   direction: ETrendDirection;

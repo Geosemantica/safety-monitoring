@@ -15,10 +15,10 @@ import {
 import AlertIcon, { validStatuses } from '../shared/icons/alert-icon';
 import Typography from '../shared/typography/typography';
 import CriterionTag, { ELocationCriterionTag } from '../criterion-tag/criterion-tag';
-import PitHat from '../control-room-signals-hat/pit-hat';
 import { EState } from '@/models/state.enum';
 import { ESignalType } from '@/models/signal-type.enum';
 import { ICriteria, IPitSignal } from '@/models/shared.interface';
+import PitHat from './pit-hat/pit-hat';
 
 interface IPitCardProps extends PropsWithChildren {
   name: string; // pitName
