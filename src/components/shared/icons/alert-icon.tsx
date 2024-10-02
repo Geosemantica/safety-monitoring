@@ -1,6 +1,6 @@
+import { EAlert } from '@/models/alert.enum';
+import { ESignalType } from '@/models/signal-type.enum';
 import React, { FC } from 'react';
-import { EAlert } from '@/services/enumsNEW/alert.enum';
-import { ESignalType } from '@/services/enumsNEW/signal-type.enum';
 
 interface IAlertIconProps {
   alert: EAlert | null;
